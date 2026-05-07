@@ -14,6 +14,7 @@
 import { ref, onMounted } from 'vue'
 
 const items = ref([])
+const res = await fetch('https://vue-js-with-flask-backend.onrender.com/items')
 
 onMounted(async () => {
     const res = await fetch('http://localhost:5000/items')
