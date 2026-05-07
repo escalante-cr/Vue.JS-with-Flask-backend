@@ -1,9 +1,9 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app, origins=["http://localhost:5173",
-     "https://vue-js-with-flask-backend-1.onrender.com/"])
+     "https://vue-js-with-flask-backend-1.onrender.com"])
 
 items = [{"id": 1, "name": "Apple"}, {"id":2, "name":"Banana"}]
 
